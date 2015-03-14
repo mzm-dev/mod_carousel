@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @version     1.1
  * @package     mod_carousel
@@ -14,20 +15,21 @@ defined('_JEXEC') or die;
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 //store params as object that we can loop through in tmpl/default.php
-$slideritems = new stdClass;
-
-for ($i=1; $i <= 3; $i++) { 
-	$slideritems->$i->heading = $params->get("slide".$i."_heading");
-	$slideritems->$i->text = $params->get("slide".$i."_text");
-	$slideritems->$i->background_image = $params->get("slide".$i."_background_image");
-	$slideritems->$i->main_image = $params->get("slide".$i."_main_image");
-	$slideritems->$i->button_text = $params->get("slide".$i."_button_text");
-	$slideritems->$i->button_link = $params->get("slide".$i."_button_link");
-	$slideritems->$i->show_read_more = $params->get("slide".$i."_show_read_more");
+//$slideritems = new stdClass();
+$slideritems = array();
+$data_slide = 5;
+for ($i = 1; $i <= $data_slide; $i++) {    
+    $slideritems[$i]['heading'] = $params->get("slide" . $i . "_heading");
+    $slideritems[$i]['text'] = $params->get("slide" . $i . "_text");
+    $slideritems[$i]['background_image'] = $params->get("slide" . $i . "_background_image");
+    $slideritems[$i]['main_image'] = $params->get("slide" . $i . "_main_image");
+    $slideritems[$i]['button_text'] = $params->get("slide" . $i . "_button_text");
+    $slideritems[$i]['button_link'] = $params->get("slide" . $i . "_button_link");
+    $slideritems[$i]['show_read_more'] = $params->get("slide" . $i . "_show_read_more");
 }
 
 // Include the syndicate functions only once
-require_once dirname(__FILE__).'/helper.php';
+require_once dirname(__FILE__) . '/helper.php';
 
 require JModuleHelper::getLayoutPath('mod_carousel', $params->get('layout', 'default'));
 ?>

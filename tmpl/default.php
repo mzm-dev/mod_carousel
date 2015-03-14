@@ -12,43 +12,55 @@ defined('_JEXEC') or die;
 <style>
 
 </style>
- 
- <div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+<div class="panel">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner container">
-    <?php foreach ($slideritems as $key => $item) {
-      $active = ($key == 1)? " active" : ""; ?>
-      <div class="item<?php echo $active; ?>">
-        <div class="carousel-caption col-md-5 col-md-offset-1">
-            <h1 class="carousel-title"><?php echo $item->heading; ?></h1>
-            <?php if($item->text != "no") : ?>
-            <p class="carousel-body"><?php echo $item->text; ?></p>
-            <?php endif; ?>
-            <?php if($item->show_read_more) : ?>
-             <p><a class="btn btn-lg btn-primary" href="<?php echo $item->button_link; ?>" role="button"><?php echo $item->button_text; ?></a></p>
-            <?php endif; ?>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <?php
+            foreach ($slideritems as $key => $item) {
+                $active_data = ($key == 1) ? " active" : "";
+                if (!empty($item['main_image'])):
+                    echo '<li data-target="#myCarousel" data-slide-to="' . $key . '"class="' . $active_data . '"></li>';
+                endif;
+            }
+            ?>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <?php //print_r($data_slide); ?>
+            <?php
+            foreach ($slideritems as $key => $item) {
+                $active = ($key == 1) ? " active" : "";
+                if (!empty($item['main_image'])):
+                    ?>
+                    <div class="item<?php echo $active; ?>">
+                        <?php if ($item['main_image']) : ?>                       
+                            <img src="<?php echo JURI::base(); ?><?php echo $item['main_image']; ?>" alt="<?php echo $item['heading']; ?>" />
+                        <?php endif; ?>
+                        <div class="carousel-caption">
+                            <h1 class="carousel-title"><?php echo $item['heading']; ?></h1>
+                            <?php if ($item['text'] != "no") : ?>
+                                <p class="carousel-body"><?php echo $item['text']; ?></p>
+                            <?php endif; ?>
+                            <?php if ($item['show_read_more']) : ?>
+                                <p><a class="btn btn-sm btn-primary" href="<?php echo $item['button_link']; ?>" role="button"><?php echo $item['button_text']; ?></a></p>
+                            <?php endif; ?>
+                        </div>
+                    </div>        
+                    <?php
+                endif;
+            }
+            ?>
         </div>
-        <?php if($item->main_image) : ?>
-          <div class="carousel-image col-md-6">
-            <img class="server" src="<?php echo JURI::base(); ?><?php echo $item->main_image; ?>" alt="<?php echo $item->heading; ?>" />
-          </div>
-        <?php endif; ?>
-      </div>
-    <?php } ?>
-  </div>
 
-  <!-- Controls -->
+        <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="icon-prev"></span>
+            <span class="icon-prev"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="icon-next"></span>
+            <span class="icon-next"></span>
         </a>
+    </div>
 </div>

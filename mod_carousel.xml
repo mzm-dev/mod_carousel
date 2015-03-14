@@ -30,8 +30,8 @@
                 <field type="spacer" name="myspacer1" label="&lt;h4&gt;Slide 1&lt;/h4&gt;&lt;hr/&gt;" />		
                 <field name="slide1_heading" type="text" default="Slide 1 Heading" label="Slide 1 Heading" description="The heading for slide 1"></field>
                 <field name="slide1_text" type="textarea" default="This is the body text for slide 1. You can change this from inside of the module manager" label="Slide 1 Text" description="The body text for slide 1"></field>
-                <!--<field name="slide1_background_image" type="media" directory="stories" label="Slide 1 Background Image" description="This image should be at least the width of the module" />-->
-                <field name="slide1_main_image" type="media" directory="stories" label="Slide 1 Main Image" description="This is the main image for this slide" />
+                <!--<field name="slide1_background_image" type="media" directory="sliders" label="Slide 1 Background Image" description="This image should be at least the width of the module" />-->
+                <field name="slide1_main_image" type="media" directory="sliders" label="Slide 1 Main Image" description="This is the main image for this slide. (Demo picture under images/sliders/slider1.jpg)" />
                 <field name="slide1_button_text" type="text" default="Read More" label="Slide 1 Button Text" description="The text of the button"></field>
                 <field name="slide1_button_link" type="url" default="#" label="Slide 1 Button Link" description="The link of the button"></field>
                 <field name="slide1_show_read_more"  type="radio"  class="btn-group btn-group-yesno" default="1" label="Slide 1 Show Readmore" description="Choose to show a read more button">
@@ -42,8 +42,8 @@
                 <field type="spacer" name="myspacer2" label="&lt;h4&gt;Slide 2&lt;/h4&gt;&lt;hr/&gt;" />
                 <field name="slide2_heading" type="text" default="Slide 2 Heading" label="Slide 2 Heading" description="The heading for slide 2"></field>
                 <field name="slide2_text" type="textarea" default="This is the body text for slide 2. You can change this from inside of the module manager" label="Slide 2 Text" description="The body text for slide 2"></field>
-                <!--<field name="slide2_background_image" type="media" directory="stories" label="Slide 2 Background Image" description="This image should be at least the width of the module" />-->
-                <field name="slide2_main_image" type="media" directory="stories" label="Slide 2 Main Image" description="This is the main image for this slide" />
+                <!--<field name="slide2_background_image" type="media" directory="sliders" label="Slide 2 Background Image" description="This image should be at least the width of the module" />-->
+                <field name="slide2_main_image" type="media" directory="sliders" label="Slide 2 Main Image" description="This is the main image for this slide. (Demo picture under images/sliders/slider1.jpg)" />
                 <field name="slide2_button_text" type="text" default="Read More" label="Slide 2 Button Text" description="The text of the button"></field>
                 <field name="slide2_button_link" type="url" default="#" label="Slide 2 Button Link" description="The link of the button"></field>
                 <field name="slide2_show_read_more" type="radio"  class="btn-group btn-group-yesno" default="1" label="Slide 2 Show Readmore" description="Choose to show a read more button">
@@ -54,8 +54,8 @@
                 <field type="spacer" name="myspacer3" label="&lt;h4&gt;Slide 3&lt;/h4&gt;&lt;hr/&gt;" />
                 <field name="slide3_heading" type="text" default="Slide 3 Heading" label="Slide 3 Heading" description="The heading for slide 3"></field>
                 <field name="slide3_text" type="textarea" default="This is the body text for slide 3. You can change this from inside of the module manager" label="Slide 3 Text" description="The body text for slide 3"></field>
-                <!--<field name="slide3_background_image" type="media" directory="stories" label="Slide 3 Background Image" description="This image should be at least the width of the module" />-->
-                <field name="slide3_main_image" type="media" directory="stories" label="Slide 3 Main Image" description="This is the main image for this slide" />
+                <!--<field name="slide3_background_image" type="media" directory="sliders" label="Slide 3 Background Image" description="This image should be at least the width of the module" />-->
+                <field name="slide3_main_image" type="media" directory="sliders" label="Slide 3 Main Image" description="This is the main image for this slide. (Demo picture under images/sliders/slider1.jpg)" />
                 <field name="slide3_button_text" type="text" default="Read More" label="Slide 3 Button Text" description="The text of the button"></field>
                 <field name="slide3_button_link" type="url" default="#" label="Slide 3 Button Link" description="The link of the button"></field>
                 <field name="slide3_show_read_more" type="radio"  class="btn-group btn-group-yesno" default="1" label="Slide 3 Show Readmore" description="Choose to show a read more button">
@@ -66,8 +66,8 @@
                 <field type="spacer" name="myspacer4" label="&lt;h4&gt;Slide 4&lt;/h4&gt;&lt;hr/&gt;" />
                 <field name="slide4_heading" type="text" default="Slide 4 Heading" label="Slide 4 Heading" description="The heading for slide 4"></field>
                 <field name="slide4_text" type="textarea" default="This is the body text for slide 4. You can change this from inside of the module manager" label="Slide 4 Text" description="The body text for slide 4"></field>
-                <!--<field name="slide4_background_image" type="media" directory="stories" label="Slide 4 Background Image" description="This image should be at least the width of the module" />-->
-                <field name="slide4_main_image" type="media" directory="stories" label="Slide 4 Main Image" description="This is the main image for this slide" />
+                <!--<field name="slide4_background_image" type="media" directory="sliders" label="Slide 4 Background Image" description="This image should be at least the width of the module" />-->
+                <field name="slide4_main_image"  type="media" directory="sliders" label="Slide 4 Main Image" description="This is the main image for this slide. (Demo picture under images/sliders/slider1.jpg)" />
                 <field name="slide4_button_text" type="text" default="Read More" label="Slide 4 Button Text" description="The text of the button"></field>
                 <field name="slide4_button_link" type="url" default="#" label="Slide 4 Button Link" description="The link of the button"></field>
                 <field name="slide4_show_read_more" type="radio"  class="btn-group btn-group-yesno" default="1" label="Slide 4 Show Readmore" description="Choose to show a read more button">
@@ -78,8 +78,8 @@
                 <field type="spacer" name="myspacer5" label="&lt;h4&gt;Slide 5&lt;/h4&gt;&lt;hr/&gt;" />                                                		
                 <field name="slide5_heading" type="text" default="Slide 5 Heading" label="Slide 5 Heading" description="The heading for slide 5"></field>
                 <field name="slide5_text" type="textarea" default="This is the body text for slide 5. You can change this from inside of the module manager" label="Slide 5 Text" description="The body text for slide 5"></field>
-                <!--<field name="slide5_background_image" type="media" directory="stories" label="Slide 5 Background Image" description="This image should be at least the width of the module" />-->
-                <field name="slide5_main_image" type="media" directory="stories" label="Slide 5 Main Image" description="This is the main image for this slide" />
+                <!--<field name="slide5_background_image" type="media" directory="sliders" label="Slide 5 Background Image" description="This image should be at least the width of the module" />-->
+                <field name="slide5_main_image"  type="media" directory="sliders" label="Slide 5 Main Image" description="This is the main image for this slide. (Demo picture under images/sliders/slider1.jpg)" />
                 <field name="slide5_button_text" type="text" default="Read More" label="Slide 5 Button Text" description="The text of the button"></field>
                 <field name="slide5_button_link" type="url" default="#" label="Slide 5 Button Link" description="The link of the button"></field>
                 <field name="slide5_show_read_more" type="radio"  class="btn-group btn-group-yesno" default="1" label="Slide 5 Show Readmore" description="Choose to show a read more button">

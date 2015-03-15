@@ -13,6 +13,8 @@ defined('_JEXEC') or die;
 
 /* Params */
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+$moduleid_sfx = htmlspecialchars($params->get('moduleid_sfx'));
+$interval = htmlspecialchars($params->get('module_interval'));
 
 //store params as object that we can loop through in tmpl/default.php
 //$slideritems = new stdClass();

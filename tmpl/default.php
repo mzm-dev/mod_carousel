@@ -9,12 +9,10 @@
 //No Direct Access
 defined('_JEXEC') or die;
 ?>
-<style>
 
-</style>
 <div class="panel">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="<?php echo $moduleid_sfx ?>" class="carousel slide" data-ride="carousel" >
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <?php
@@ -56,11 +54,20 @@ defined('_JEXEC') or die;
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
+        <a class="left carousel-control" href="#<?php echo $moduleid_sfx ?>" data-slide="prev">
+            <!--<span class="icon-prev"></span>-->
+            <i class="glyphicon glyphicon-chevron-left"></i>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
+        <a class="right carousel-control" href="#<?php echo $moduleid_sfx ?>" data-slide="next">
+            <!--<span class="icon-next"></span>-->
+            <i class="glyphicon glyphicon-chevron-right"></i>
         </a>
     </div>
 </div>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('#<?php echo $moduleid_sfx ?>').carousel({
+            interval: <?php echo $interval ?>
+        });
+    });
+</script>
